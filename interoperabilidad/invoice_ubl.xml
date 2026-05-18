@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Factura xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    
+    <cbc:IDPersonalizacion>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:poacc:trns:invoice:3</cbc:IDPersonalizacion>
+    <cbc:IDPerfil>urn:fdc:peppol.eu:poacc:bis:invoice:3</cbc:IDPerfil>
+    
+    <cbc:ID>INV/2026/05/0142</cbc:ID>
+    <cbc:FechaEmision>2026-05-18</cbc:FechaEmision>
+    <cbc:FechaVencimiento>2026-06-17</cbc:FechaVencimiento>
+    <cbc:CodigoTipoFactura>380</cbc:CodigoTipoFactura>
+    <cbc:CodigoMonedaDocumento>EUR</cbc:CodigoMonedaDocumento>
+    
+    <cac:ParteContableProveedor>
+        <cac:Parte>
+            <cac:EsquemaFiscalParte>
+                <cbc:IDEmpresa>ESB41123456</cbc:IDEmpresa>
+                <cac:EsquemaFiscal>
+                    <cbc:ID>IVA</cbc:ID>
+                </cac:EsquemaFiscal>
+            </cac:EsquemaFiscalParte>
+            <cac:EntidadLegalParte>
+                <cbc:NombreRegistro>WillmanTech S.L.</cbc:NombreRegistro>
+            </cac:EntidadLegalParte>
+        </cac:Parte>
+    </cac:ParteContableProveedor>
+    
+    <cac:ParteContableCliente>
+        <cac:Parte>
+            <cac:EsquemaFiscalParte>
+                <cbc:IDEmpresa>ESA41987654</cbc:IDEmpresa>
+                <cac:EsquemaFiscal>
+                    <cbc:ID>IVA</cbc:ID>
+                </cac:EsquemaFiscal>
+            </cac:EsquemaFiscalParte>
+            <cac:EntidadLegalParte>
+                <cbc:NombreRegistro>Soluciones Digitales Sur S.A.</cbc:NombreRegistro>
+            </cac:EntidadLegalParte>
+            <cac:Contacto>
+                <cbc:CorreoElectronico>compras@solucionesdursur.com</cbc:CorreoElectronico>
+            </cac:Contacto>
+        </cac:Parte>
+    </cac:ParteContableCliente>
+    
+    <cac:TotalImpuestos>
+        <cbc:ImporteImpuesto currencyID="EUR">297.99</cbc:ImporteImpuesto>
+        <cac:SubtotalImpuesto>
+            <cbc:BaseImponible currencyID="EUR">1419.00</cbc:BaseImponible>
+            <cbc:ImporteImpuesto currencyID="EUR">297.99</cbc:ImporteImpuesto>
+            <cac:CategoriaImpuesto>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Porcentaje>21.00</cbc:Porcentaje>
+                <cac:EsquemaFiscal>
+                    <cbc:ID>IVA</cbc:ID>
+                </cac:EsquemaFiscal>
+            </cac:CategoriaImpuesto>
+        </cac:SubtotalImpuesto>
+    </cac:TotalImpuestos>
+    
+    <cac:TotalMonetarioLegal>
+        <cbc:ImporteExtensionLinea currencyID="EUR">1419.00</cbc:ImporteExtensionLinea>
+        <cbc:ImporteExcluyendoImpuestos currencyID="EUR">1419.00</cbc:ImporteExcluyendoImpuestos>
+        <cbc:ImporteIncluyendoImpuestos currencyID="EUR">1716.99</cbc:ImporteIncluyendoImpuestos>
+        <cbc:ImportePagar currencyID="EUR">1716.99</cbc:ImportePagar>
+    </cac:TotalMonetarioLegal>
+    
+    <cac:LineaFactura>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CantidadFacturada unitCode="HUR">12.0</cbc:CantidadFacturada>
+        <cbc:ImporteExtensionLinea currencyID="EUR">969.00</cbc:ImporteExtensionLinea>
+        <cac:CargoDescuento>
+            <cbc:IndicadorCargo>false</cbc:IndicadorCargo>
+            <cbc:Importe currencyID="EUR">51.00</cbc:Importe>
+        </cac:CargoDescuento>
+        <cac:Articulo>
+            <cbc:Nombre>Consultoría Tecnológica - Despliegue de Infraestructura Cloud</cbc:Nombre>
+            <cac:CategoriaImpuestoClasificada>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Porcentaje>21.00</cbc:Porcentaje>
+                <cac:EsquemaFiscal>
+                    <cbc:ID>IVA</cbc:ID>
+                </cac:EsquemaFiscal>
+            </cac:CategoriaImpuestoClasificada>
+        </cac:Articulo>
+        <cac:Precio>
+            <cbc:ImportePrecio currencyID="EUR">85.00</cbc:ImportePrecio>
+        </cac:Precio>
+    </cac:LineaFactura>
+    
+</Factura>

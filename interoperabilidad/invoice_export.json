@@ -1,0 +1,53 @@
+{
+  "id_factura": 4829,
+  "numero_factura": "INV/2026/05/0142",
+  "fecha_emision": "2026-05-18",
+  "fecha_vencimiento": "2026-06-17",
+  "moneda": "EUR",
+  "estado": "publicado",
+  "cliente": {
+    "id_cliente": 904,
+    "nombre_empresa": "Soluciones Digitales Sur S.A.",
+    "nif": "A41987654",
+    "correo_electronico": "compras@solucionesdursur.com",
+    "telefono": "+34 954 000 111",
+    "direccion": {
+      "calle": "Avenida de la Innovación, 14",
+      "ciudad": "Sevilla",
+      "codigo_postal": "41020",
+      "codigo_pais": "ES"
+    }
+  },
+  "lineas_factura": [
+    {
+      "id_linea": 12051,
+      "nombre_producto": "Consultoría Tecnológica - Despliegue de Infraestructura Cloud",
+      "cantidad": 12.0,
+      "unidad_medida": "horas",
+      "precio_unitario": 85.00,
+      "porcentaje_descuento": 5.00,
+      "porcentaje_impuesto": 21.00,
+      "subtotal_neto": 969.00
+    },
+    {
+      "id_linea": 12052,
+      "nombre_producto": "Soporte Técnico Especializado ERP (Mensual)",
+      "cantidad": 1.0,
+      "unidad_medida": "unidad",
+      "precio_unitario": 450.00,
+      "porcentaje_descuento": 0.00,
+      "porcentaje_impuesto": 21.00,
+      "subtotal_neto": 450.00
+    }
+  ],
+  "resumen_impuestos": {
+    "total_base_imponible": 1419.00,
+    "total_importe_impuesto": 297.99,
+    "tasa_impuesto_aplicada": 21.00
+  },
+  "totales_financieros": {
+    "base_imponible": 1419.00,
+    "total_descuentos": 51.00,
+    "importe_total_neto": 1716.99
+  }
+}
