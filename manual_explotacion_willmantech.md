@@ -4,7 +4,7 @@ Este documento técnico servirá de guía para los administradores de sistemas y
 
 ## 1. Introducción y Arquitectura
 
-*La infraestructura ERP/CRM de WillmanTech S.L. ha sido implantada con el objetivo de optimizar sus flujos de ventas y facturación.
+* La infraestructura ERP/CRM de WillmanTech S.L. ha sido implantada con el objetivo de optimizar sus flujos de ventas y facturación.
 * Para asegurar un funcionamiento aislado y escalable, el sistema informático se encuentra desplegado en un entorno dockerizado.
 * La topología lógica se implementa mediante un despliegue con Docker Compose, donde se habilitan y conectan los módulos de aplicación (ERP/CRM) con sus respectivos servicios de persistencia de datos.
 
